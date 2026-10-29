@@ -221,3 +221,11 @@ __marimo__/
 # pixi environments
 .pixi/*
 !.pixi/config.toml
+
+# project data (audio and archives)
+data/dev/
+data/test/
+data/train/
+*.mp3
+*.zip
+.DS_Store

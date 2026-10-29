@@ -2,12 +2,19 @@
 authors = ["tigtaw <47674498+tigtaw@users.noreply.github.com>"]
 channels = ["conda-forge"]
 name = "CS-1671-Spanish-and-French-Accent-Prediction"
-platforms = ["linux-64"]
+platforms = ["linux-64", "osx-arm64"]
 version = "0.1.0"
 
 [tasks]
 
 [dependencies]
 scikit-learn = ">=1.9.1,<2"
-praat-parselmouth = ">=0.4.7,<0.5"
 pandas = ">=3.1.0,<4"
+python = ">=3.14.10,<3.15"
+librosa = ">=1.0.0,<2"
+ffmpeg = ">=9.0.2,<10"
+matplotlib = ">=3.11.2,<4"
+joblib = ">=1.6.0,<2"
+
+[pypi-dependencies]
+praat-parselmouth = ">=0.4.7, <0.5"

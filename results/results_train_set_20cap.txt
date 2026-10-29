@@ -1,0 +1,79 @@
+training clips: 9399 (cap per speaker: 20)
+===== praat only (7 features)
+train accuracy 0.13160974571762954
+dev accuracy 0.08522727272727272 | macro-F1 0.0829126303642064
+test accuracy 0.08412698412698413 | macro-F1 0.07546399316310534
+                               precision    recall  f1-score   support
+
+              América central       0.12      0.17      0.14        77
+              Andino-Pacífico       0.20      0.15      0.17        98
+                       Caribe       0.09      0.05      0.07        96
+                      Chileno       0.06      0.06      0.06        51
+España: Centro-Sur peninsular       0.04      0.07      0.05        45
+       España: Islas Canarias       0.01      0.50      0.01         2
+     España: Norte peninsular       0.20      0.15      0.17        55
+       España: Sur peninsular       0.00      0.00      0.00        12
+                       México       0.29      0.03      0.05       138
+                  Rioplatense       0.06      0.02      0.03        56
+
+                     accuracy                           0.08       630
+                    macro avg       0.11      0.12      0.08       630
+                 weighted avg       0.15      0.08      0.09       630
+
+clip                          true                          predicted                     
+------------------------------------------------------------------------------------------
+common_voice_es_19658537.mp3  España: Norte peninsular      España: Sur peninsular        
+common_voice_es_19139893.mp3  Andino-Pacífico               España: Islas Canarias        
+common_voice_es_19609224.mp3  América central               España: Islas Canarias        
+===== mfcc only (26 features)
+train accuracy 0.2303436535801681
+dev accuracy 0.1340909090909091 | macro-F1 0.12245178033909077
+test accuracy 0.10952380952380952 | macro-F1 0.09112931784307918
+                               precision    recall  f1-score   support
+
+              América central       0.05      0.04      0.04        77
+              Andino-Pacífico       0.25      0.15      0.19        98
+                       Caribe       0.16      0.15      0.15        96
+                      Chileno       0.12      0.10      0.11        51
+España: Centro-Sur peninsular       0.02      0.02      0.02        45
+       España: Islas Canarias       0.00      0.00      0.00         2
+     España: Norte peninsular       0.09      0.09      0.09        55
+       España: Sur peninsular       0.02      0.08      0.03        12
+                       México       0.32      0.14      0.20       138
+                  Rioplatense       0.07      0.09      0.08        56
+
+                     accuracy                           0.11       630
+                    macro avg       0.11      0.09      0.09       630
+                 weighted avg       0.16      0.11      0.13       630
+
+clip                          true                          predicted                     
+------------------------------------------------------------------------------------------
+common_voice_es_19658537.mp3  España: Norte peninsular      España: Sur peninsular        
+common_voice_es_19139893.mp3  Andino-Pacífico               España: Norte peninsular      
+common_voice_es_19609224.mp3  América central               Andino-Pacífico               
+===== praat + mfcc (33 features)
+train accuracy 0.2469411639536121
+dev accuracy 0.12954545454545455 | macro-F1 0.11873456587849678
+test accuracy 0.10476190476190476 | macro-F1 0.0891005487657808
+                               precision    recall  f1-score   support
+
+              América central       0.05      0.04      0.04        77
+              Andino-Pacífico       0.21      0.12      0.15        98
+                       Caribe       0.18      0.17      0.17        96
+                      Chileno       0.11      0.12      0.11        51
+España: Centro-Sur peninsular       0.00      0.00      0.00        45
+       España: Islas Canarias       0.00      0.00      0.00         2
+     España: Norte peninsular       0.15      0.18      0.16        55
+       España: Sur peninsular       0.02      0.08      0.04        12
+                       México       0.24      0.10      0.14       138
+                  Rioplatense       0.06      0.07      0.07        56
+
+                     accuracy                           0.10       630
+                    macro avg       0.10      0.09      0.09       630
+                 weighted avg       0.14      0.10      0.12       630
+
+clip                          true                          predicted                     
+------------------------------------------------------------------------------------------
+common_voice_es_19658537.mp3  España: Norte peninsular      España: Sur peninsular        
+common_voice_es_19139893.mp3  Andino-Pacífico               España: Norte peninsular      
+common_voice_es_19609224.mp3  América central               Andino-Pacífico               
